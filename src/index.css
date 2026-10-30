@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-obsidian-base: #0B0D13;
+  --color-obsidian-surface: #111319;
+  --color-obsidian-card: #141721;
+  --color-obsidian-card-hover: #191c28;
+  --color-obsidian-tray: #1B202E;
+  --color-obsidian-high: #282a30;
+  --color-obsidian-highest: #33343b;
+
+  --color-crema: #FF9F43;
+  --color-crema-tint: #ffc697;
+  --color-crema-deep: #4c2700;
+  --color-crema-container: #ffb77a;
+
+  --color-nitrogen: #00F2FE;
+  --color-nitrogen-dim: #00dce6;
+  --color-nitrogen-subtle: #dcfdff;
+  --color-nitrogen-dark: #00373a;
+
+  --color-lilac: #A78BFA;
+  --color-lilac-soft: #d8caff;
+  --color-lilac-dark: #381385;
+
+  --color-caramel: #FBBF24;
+  --color-dragonfruit: #F43F5E;
+  --color-matcha: #10B981;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0D13;
+}
+::-webkit-scrollbar-thumb {
+  background: #202533;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2B3245;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background-color: rgba(20, 23, 33, 0.78);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-floating {
+  background-color: rgba(27, 32, 46, 0.85);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.crema-glow {
+  box-shadow: 0 10px 28px -6px rgba(255, 159, 67, 0.28);
+}
+
+.nitrogen-glow {
+  box-shadow: 0 10px 28px -6px rgba(0, 242, 254, 0.25);
+}
+
+.card-elevation {
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.65);
+}
+
+.crema-btn {
+  background: #FF9F43;
+  color: #0B0D13;
+  font-weight: 700;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 8px 24px -4px rgba(255, 159, 67, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.crema-btn:hover {
+  background: #ffaa57;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 10px 28px -4px rgba(255, 159, 67, 0.5);
+  transform: translateY(-1px);
+}
+.crema-btn:active {
+  transform: scale(0.98);
+}
+
+.nitro-btn {
+  background: rgba(0, 242, 254, 0.12);
+  border: 1px solid #00F2FE;
+  color: #00F2FE;
+  transition: all 0.2s ease;
+}
+.nitro-btn:hover {
+  background: rgba(0, 242, 254, 0.22);
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+}
+
+.tag-label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Obsidian Brew",
+  "description": "Artisanal third-wave coffee ritual meets high-velocity digital fulfillment. Nocturnal luxury, precision extraction telemetry, and bespoke brew crafting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
